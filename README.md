@@ -29,5 +29,8 @@ where X and Y are the annualized returns of two assets, and μX and μY are thei
 #### Significance:
 The covariance matrix is fundamental in modern portfolio theory, used to construct a portfolio that optimally balances return and risk. By understanding the covariance between assets, investors can diversify their holdings to minimize risk while aiming for desired returns. This is particularly valuable in strategic decision-making for long-term investments.
 
+### Possible Limitations
+The current analysis may be limited by the variability in financial markets and the complexity of global economic factors.
+
 ### Machine Learning Proposal Goals
 The next phase will involve using machine learning techniques to predict asset prices for the first three months following the dataset. Models like ARIMA, or regression analysis might be utilized to forecast based on patterns identified in the historical data.
