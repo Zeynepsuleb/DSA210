@@ -21,8 +21,8 @@ The historical price data was collected from reputable financial market database
 
 ### Data Analysis Plan
 The initial stage of data analysis involved calculating the expected returns and covariance matrices for the assets:
-- **Expected Returns Calculation**: Returns were calculated using daily prices with the formula `(Current Value - Original Value) / Original Value`. These daily returns were then annualized using the formula `((Daily Return + 1)^252) - 1`, reflecting the 252 trading days in a year.
-- **Covariance Matrix Calculation**: With the annualized returns for each asset, the covariance between each pair of assets was calculated using the standard formula for covariance:
+- **Expected Returns Calculation**: Returns will be calculated using daily prices with the formula `(Current Value - Original Value) / Original Value`. These daily returns will be then annualized using the formula `((Daily Return + 1)^252) - 1`, reflecting the 252 trading days in a year.
+- **Covariance Matrix Calculation**: With the annualized returns for each asset, the covariance between each pair of assets will be calculated using the standard formula for covariance:
 **Covariance(X, Y) = E[(X - μX)(Y - μY)]**
 where X and Y are the annualized returns of two assets, and μX and μY are their respective mean returns. The expectation E is estimated as the average over the observed period. This calculation provides a matrix where each element σij represents the covariance between the returns of asset i and asset j. Positive values indicate that assets tend to move in the same direction, whereas negative values suggest inverse movements.
 
