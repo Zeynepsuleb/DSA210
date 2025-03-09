@@ -17,7 +17,7 @@ The dataset consists of price data for ten different assets from 2010 to 2024. T
 
 
 ### Data Collection Methods
-The historical price data was collected from reputable financial market databases, ensuring accuracy and reliability. The data for the first phase of the project has been processed to calculate statistical measures like expected returns and covariance matrices.
+The historical price data was collected from reputable financial market databases, ensuring accuracy and reliability. Even though the market price data for these ten assets is available on the internet, I obtained it from a well-known portfolio company, Hedef Portföy.. The data for the first phase of the project has been processed to calculate statistical measures like expected returns and covariance matrices.
 
 ### Data Analysis Plan
 The initial stage of data analysis involved calculating the expected returns and covariance matrices for the assets:
