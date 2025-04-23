@@ -34,3 +34,11 @@ The current analysis may be limited by the variability in financial markets and 
 
 ### Machine Learning Proposal Goals
 The next phase will involve using machine learning techniques to predict asset prices for the first three months following the dataset. Models like ARIMA, or regression analysis might be utilized to forecast based on patterns identified in the historical data.
+
+### You can view the full notebook here:  
+[Open EDA & Hypothesis Test Notebook](Data_Collection,_EDA,_and_Hypothesis_Testing.ipynb)
+
+### Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+
