@@ -35,12 +35,6 @@ The current analysis may be limited by the variability in financial markets and 
 ### Machine Learning Proposal Goals
 The next phase will involve using machine learning techniques to predict asset prices for the first three months following the dataset. Models like ARIMA, or regression analysis might be utilized to forecast based on patterns identified in the historical data.
 
-### Data Collection, EDA, and Hypothesis Testing:  
-[Exploratory Financial Analysis and Hypothesis Testing](Exploratory_Financial_Analysis_and_Hypothesis_Testing.ipynb)
-
-As part of the April 18 milestone, I successfully collected and analyzed a dataset consisting of 11 financial assets with daily price data from 2010 to 2024. I performed extensive exploratory data analysis, including checking data types, identifying and handling missing values, and generating descriptive statistics. Time series plots highlighted long-term trends in asset performance, and correlation analysis revealed strong relationships among most KYD-based indices, while long-term bonds demonstrated weaker or even negative correlations—indicating diversification potential. A one-sample t-test was conducted on the daily returns of the KYD Deposit Index, confirming that its mean return is statistically different from zero (p < 0.0001). These steps provide a solid foundation for the next phase of the project, where machine learning models will be applied for price forecasting.
-
-
 ### Hypothesis and Methodology 
 
 This study aims to investigate whether the daily return of a portfolio consisting of KYD Eurobond, BIST 100, and Gold (USD/Ounce) can be predicted using past return patterns and other financial indicators.
