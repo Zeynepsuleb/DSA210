@@ -40,13 +40,19 @@ The next phase will involve using machine learning techniques to predict asset p
 
 As part of the April 18 milestone, I successfully collected and analyzed a dataset consisting of 11 financial assets with daily price data from 2010 to 2024. I performed extensive exploratory data analysis, including checking data types, identifying and handling missing values, and generating descriptive statistics. Time series plots highlighted long-term trends in asset performance, and correlation analysis revealed strong relationships among most KYD-based indices, while long-term bonds demonstrated weaker or even negative correlations—indicating diversification potential. A one-sample t-test was conducted on the daily returns of the KYD Deposit Index, confirming that its mean return is statistically different from zero (p < 0.0001). These steps provide a solid foundation for the next phase of the project, where machine learning models will be applied for price forecasting.
 
-### Refined Hypothesis: Portfolio vs. Benchmark
-Hypothesis Statement:The average daily return of the portfolio—composed of the KYD Eurobond Index, BIST 100 Index, and Gold Ounce/USD Rate with equal weighting—is statistically significantly higher than the average daily return of the KYD Deposit Index (1 Month).
 
-In this analysis, I constructed an equally weighted portfolio consisting of the KYD Eurobond Index, BIST 100 Index, and the Gold Ounce/USD Rate. The objective was to evaluate whether this portfolio statistically outperformed a risk-free benchmark, the KYD Deposit Index (1 Month), in terms of average daily return. A paired sample t-test was applied for this purpose. While the cumulative return plot visually shows that the portfolio slightly outperformed the benchmark over time, the statistical results (t = 0.8071, p = 0.4197) indicate that this difference is not statistically significant at the 5% level. 
+### Hypothesis and Methodology 
 
-Thus, although the portfolio outperformed the benchmark during certain periods, this advantage was not consistent or strong enough to reject the null hypothesis. These findings emphasize the importance of complementing return-based evaluations with statistical validation when assessing the effectiveness of investment strategies.
+This study aims to investigate whether the daily return of a portfolio consisting of KYD Eurobond, BIST 100, and Gold (USD/Ounce) can be predicted using past return patterns and other financial indicators.
+The research is driven by the following hypotheses:
 
+* **H₀ (Null Hypothesis):**
+  The daily return of the portfolio cannot be accurately predicted using lagged returns and other financial indicators.
+
+* **H₁ (Alternative Hypothesis):**
+  The daily return of the portfolio can be accurately predicted using lagged returns and other financial indicators.
+
+To test this hypothesis, a logistic regression model was trained using features such as portfolio return, 1-month KYD deposit return, and lagged values of the portfolio (`Lag_1`, `Lag_2`). The model was evaluated using accuracy, precision, recall, and F1-score metrics, as well as ROC and precision-recall curves. The results showed that the model achieved over 98% accuracy, confirming the hypothesis that portfolio direction (positive or negative) can be reliably predicted based on historical data.
 
 
 
