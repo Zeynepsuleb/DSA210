@@ -35,9 +35,7 @@ The current analysis may be limited by the variability in financial markets and 
 ### Machine Learning Proposal Goals
 The next phase will involve using machine learning techniques to predict asset prices for the first three months following the dataset. Models like ARIMA, or regression analysis might be utilized to forecast based on patterns identified in the historical data.
 
-### Project Summary: Predictive Analysis of Portfolio Returns (DSA210)
-
-👉 [DSA 210 Code.ipynb](https://github.com/zeynepboluk/DSA210-Final-Project/blob/main/DSA%20210%20Code.ipynb)
+### Project Summary: Predictive Analysis of Portfolio Returns 
 
 #### Project Goal
 
@@ -47,7 +45,6 @@ The objective of this project is to analyze and predict the daily return directi
 
 * **Data Source**: Daily price data of various financial instruments from 2010 to 2024, provided by Hedef Portfoy.
 * **Assets Used**: KYD Eurobond, BIST 100, Gold USD/Ounce, and KYD Deposit Index.
-
 
 1. **Data Loading**
 
@@ -107,6 +104,7 @@ The hypothesis that portfolio returns can be predicted using historical patterns
 - The model only used return-based features and did not include macroeconomic indicators.  
 - Only logistic regression was applied; other models were not compared.  
 - Future work can involve testing additional models, adding economic features, and trying time series methods like ARIMA or LSTM.
+  
 
 **Note:** I received assistance from AI tools (ChatGPT) in some parts of the project, particularly during code debugging.
 
