@@ -101,4 +101,10 @@ To test this hypothesis, a logistic regression model was trained using features 
 
 The hypothesis that portfolio returns can be predicted using historical patterns and financial indicators was supported by statistical testing and model performance. The logistic regression model proved effective in predicting the direction of returns. This analysis supports the viability of using basic financial features and lagged returns for short-term forecasting in a diversified portfolio.
 
+###  Limitations & Future Work
+- The model only used return-based features and did not include macroeconomic indicators.  
+- Only logistic regression was applied; other models were not compared.  
+- Future work can involve testing additional models, adding economic features, and trying time series methods like ARIMA or LSTM.
+
+**Note:** I received assistance from AI tools (ChatGPT) in some parts of the project, particularly during code debugging.
 
