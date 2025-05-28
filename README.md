@@ -37,6 +37,8 @@ The next phase will involve using machine learning techniques to predict asset p
 
 ### Project Summary: Predictive Analysis of Portfolio Returns (DSA210)
 
+👉 [DSA 210 Code.ipynb](https://github.com/zeynepboluk/DSA210-Final-Project/blob/main/DSA%20210%20Code.ipynb)
+
 #### Project Goal
 
 The objective of this project is to analyze and predict the daily return direction (positive or negative) of a portfolio constructed from three financial assets: KYD Eurobond Index, BIST 100 Index, and Gold (Ounce/USD). The study also compares the performance of this portfolio with the KYD 1-Month Deposit Index.
