@@ -35,6 +35,55 @@ The current analysis may be limited by the variability in financial markets and 
 ### Machine Learning Proposal Goals
 The next phase will involve using machine learning techniques to predict asset prices for the first three months following the dataset. Models like ARIMA, or regression analysis might be utilized to forecast based on patterns identified in the historical data.
 
+### Project Summary: Predictive Analysis of Portfolio Returns (DSA210)
+
+#### Project Goal
+
+The objective of this project is to analyze and predict the daily return direction (positive or negative) of a portfolio constructed from three financial assets: KYD Eurobond Index, BIST 100 Index, and Gold (Ounce/USD). The study also compares the performance of this portfolio with the KYD 1-Month Deposit Index.
+
+#### Data and Preparation
+
+* **Data Source**: Daily price data of various financial instruments from 2010 to 2024, provided by Hedef Portfoy.
+* **Assets Used**: KYD Eurobond, BIST 100, Gold USD/Ounce, and KYD Deposit Index.
+
+
+1. **Data Loading**
+
+   * Loaded the `.xlsx` file using Google Colab.
+
+2. **Return Calculations**
+
+   * Calculated daily returns for KYD Eurobond, BIST 100, and Gold.
+   * Created an equal-weighted portfolio from the average of the three assets.
+   * Calculated daily returns for the KYD 1-Month Deposit Index.
+
+3. **Target Variable Creation**
+
+   * Defined a binary target variable `Target`, where:
+
+     * `1` indicates the portfolio return is positive,
+     * `0` indicates otherwise.
+
+4. **Data Visualization and Cleaning**
+
+   * Plotted time series to visualize asset performance.
+   * Used z-score filtering to remove extreme outliers from portfolio returns.
+
+5. **Hypothesis Testing**
+
+   * Null Hypothesis (H0): There is no significant difference between the portfolio return and deposit return.
+   * Alternative Hypothesis (H1): The portfolio return is significantly different from the deposit return.
+   * Result: p-value < 0.05 → Reject H0 → The portfolio performs significantly different than the deposit.
+
+6. **Machine Learning Model**
+
+   * Logistic Regression was applied to classify the direction of daily return.
+   * Features: `Portfolio`, `Deposit`, `Lag_1`, `Lag_2`
+   * Train-test split (70-30), with feature scaling.
+   * Balanced class weights used to address class imbalance.
+   * Model accuracy exceeded 98%, indicating strong predictive performance.
+
+
 ### Hypothesis and Methodology 
 
 This study aims to investigate whether the daily return of a portfolio consisting of KYD Eurobond, BIST 100, and Gold (USD/Ounce) can be predicted using past return patterns and other financial indicators.
@@ -48,8 +97,8 @@ The research is driven by the following hypotheses:
 
 To test this hypothesis, a logistic regression model was trained using features such as portfolio return, 1-month KYD deposit return, and lagged values of the portfolio (`Lag_1`, `Lag_2`). The model was evaluated using accuracy, precision, recall, and F1-score metrics, as well as ROC and precision-recall curves. The results showed that the model achieved over 98% accuracy, confirming the hypothesis that portfolio direction (positive or negative) can be reliably predicted based on historical data.
 
+#### Conclusion
 
-
-
+The hypothesis that portfolio returns can be predicted using historical patterns and financial indicators was supported by statistical testing and model performance. The logistic regression model proved effective in predicting the direction of returns. This analysis supports the viability of using basic financial features and lagged returns for short-term forecasting in a diversified portfolio.
 
 
